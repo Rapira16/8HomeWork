@@ -205,7 +205,7 @@ TurnOutcome runGameLoop(Sign player_sign) {
 }
 
 void printField(const GameField& field) {
-    std::cout << "=========\n";
+    std::cout << "-------\n";
     for (size_t row = 0; row < 3; row++) {
         std::cout << "|";
         for (size_t column = 0; column < 3; column++) {
@@ -223,9 +223,9 @@ void printField(const GameField& field) {
             }
             std::cout << "|";
         }
-        std::cout << "|\n";
+        std::cout << "\n";
     }
-    std::cout << "=========\n";
+    std::cout << "-------\n";
 }
 
 bool queryPlayAgain() {
